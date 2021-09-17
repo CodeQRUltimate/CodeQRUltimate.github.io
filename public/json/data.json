@@ -1,0 +1,18 @@
+{
+  "players": [
+    {
+      "number": 88,
+      "name": "Lus",
+      "imageUrl": "/img/lus.jpg",
+      "memeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "description": "Mon texte fukall"
+    },
+    {
+      "number": 99,
+      "name": "Kes",
+      "imageUrl": "/img/kes.jpg",
+      "memeUrl": "https://www.youtube.com/watch?v=_Rp5syLd1LU",
+      "description": "Mon autre texte fukall"
+    }
+  ]
+}
