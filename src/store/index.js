@@ -17,6 +17,12 @@ export default new Vuex.Store({
       players: []
     }
   },
+  getters: {
+    playerNumber: state => Number(state.route.params.playerNumber),
+    player: (state, getters) =>
+      state.data.players.find(x => x.number === getters.playerNumber),
+    shouldRedirectToMemeUrl: state => state.route.query.qr === "1"
+  },
   mutations: {
     LOCALE_SET: (state, locale) => {
       state.locale = locale;
@@ -31,11 +37,14 @@ export default new Vuex.Store({
       i18n.locale = locale;
       dayjs.locale(locale);
     },
-    async getData({ commit }) {
+    async getData({ commit, getters }) {
       const response = await fetch("/json/data.json");
       const data = await response.json();
-
       commit("DATA_SET", data);
+
+      if (getters.shouldRedirectToMemeUrl) {
+        window.location = getters.player.memeUrl;
+      }
     }
   }
 });

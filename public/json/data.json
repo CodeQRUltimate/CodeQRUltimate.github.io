@@ -2,17 +2,17 @@
   "players": [
     {
       "number": 88,
-      "name": "Lus",
-      "imageUrl": "/img/lus.jpg",
+      "name": "Ludovic Cao",
+      "imageUrl": "/img/lus.1.png",
       "memeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Mon texte fukall"
+      "description": "Waddup tout le monde jsuis Lus lemao"
     },
     {
       "number": 99,
       "name": "Kes",
       "imageUrl": "/img/kes.jpg",
       "memeUrl": "https://www.youtube.com/watch?v=_Rp5syLd1LU",
-      "description": "Mon autre texte fukall"
+      "description": "Yo le beef cherche pas l'beef"
     }
   ]
 }
