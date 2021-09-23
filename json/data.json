@@ -1,39 +1,46 @@
 {
   "players": [
     {
-      "number": 88,
-      "name": "Ludovic Cao",
-      "imageUrl": "/img/lus.1.png",
-      "memeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "Waddup tout le monde jsuis Lus lemao"
-    },
-    {
-      "number": 99,
-      "name": "Kes",
-      "imageUrl": "/img/kes.jpg",
-      "memeUrl": "https://www.youtube.com/watch?v=_Rp5syLd1LU",
-      "description": "Yo le beef cherche pas l'beef"
-    },
-    {
-      "number": 66,
-      "name": "Raphael Drouin",
-      "imageUrl": "XXXXXXXXX",
-      "memeUrl": "XXXXXXXXX",
-      "description": "XXXXXXXXXX"
+      "number": 13,
+      "name": "Frédéric Grisé",
+      "imageUrl": "/img/fredericgrise1.png",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age:  Sign:  Favourite animal:  Favourite TV show:  Favourite throw:  Favourite Ultimate memory:  How to reach out: "
     },
     {
       "number": 36,
       "name": "Maxime Jacquemont",
-      "imageUrl": "XXXXXXXXX",
+      "imageUrl": "/img/maximejacquemont1.png",
       "memeUrl": "XXXXXXXXXX",
       "description": "XXXXXXXXX"
     },
     {
-      "number": 0,
-      "name": "Test",
-      "imageUrl": "XXXXXXXXXX",
+      "number": 45,
+      "name": "Mathieu Boisvert-Désilets",
+      "imageUrl": "/img/mathieuboisvertdesilets1.png",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "XXXXXXXXXX"
+      "description": "Age:  Sign:  Favourite animal:  Favourite TV show:  Favourite throw:  Favourite Ultimate memory:  How to reach out: "
+    },
+    {
+      "number": 55,
+      "name": "Nalini Gascon",
+      "imageUrl": "/img/nalinigascon1.png",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age:  Sign:  Favourite animal:  Favourite TV show:  Favourite throw:  Favourite Ultimate memory:  How to reach out: "
+    },
+    {
+      "number": 66,
+      "name": "Raphael Drouin",
+      "imageUrl": "/img/raphaeldrouin1.png",
+      "memeUrl": "https://youtu.be/dQw4w9WgXcQ",
+      "description": "Age: 26  Sign:  Favourite animal:  Favourite TV show:  Favourite throw: Hammer Favourite Ultimate memory:  How to reach out: "
+    },
+    {
+      "number": 88,
+      "name": "Ludovic Cao",
+      "imageUrl": "/img/ludoviccao1.png",
+      "memeUrl": "https://tinder.com/@ludoviccao",
+      "description": "Age: 27 Sign: Sagittarius Favourite animal: Giraffe Favourite TV show: Occupation Double (duh) Favourite throw: Reverse Haxi-Maxi Favourite Ultimate memory: Throwing a long pass endzone to endzone to my friend Marie-Helene guarded by Quentin Bonnaud (Royal 2019 MVP) in Universe point, winning us the last game of the winter league season How to reach out: https://www.instagram.com/ludovic.cao/ "
     }
   ]
 }
