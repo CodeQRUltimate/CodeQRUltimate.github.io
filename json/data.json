@@ -1,39 +1,60 @@
 {
   "players": [
     {
+      "number": 5,
+      "name": "Jan Felix Scholtes",
+      "imageUrl": "/img/janfelixscholtes1.jpg",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: "
+    },
+    {
+      "number": 7,
+      "name": "Johanie Gonneville",
+      "imageUrl": "/img/johaniegonneville1.jpg",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/johanieg/ "
+    },
+    {
       "number": 13,
       "name": "Frédéric Grisé",
       "imageUrl": "/img/fredericgrise1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age:  Sign:  Favourite animal:  Favourite TV show:  Favourite throw:  Favourite Ultimate memory:  How to reach out: "
+      "description": "Age: 27 \n Sign: Leo \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/fredgrise/ "
     },
     {
       "number": 36,
       "name": "Maxime Jacquemont",
       "imageUrl": "/img/maximejacquemont1.jpg",
       "memeUrl": "XXXXXXXXXX",
-      "description": "XXXXXXXXX"
+      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/max.jackk/ "
     },
     {
       "number": 45,
       "name": "Mathieu Boisvert-Désilets",
       "imageUrl": "/img/mathieuboisvertdesilets1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age:  Sign:  Favourite animal:  Favourite TV show:  Favourite throw:  Favourite Ultimate memory:  How to reach out: "
+      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/mathboisvert/ "
+    },
+    {
+      "number": 53,
+      "name": "Joëlle Laferrière",
+      "imageUrl": "/img/joellelaferriere1.jpg",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/joellelaf/ "
     },
     {
       "number": 55,
       "name": "Nalini Gascon",
       "imageUrl": "/img/nalinigascon1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age:  Sign:  Favourite animal:  Favourite TV show:  Favourite throw:  Favourite Ultimate memory:  How to reach out: "
+      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/nalinigascon/ "
     },
     {
       "number": 66,
       "name": "Raphael Drouin",
       "imageUrl": "/img/raphaeldrouin1.jpg",
       "memeUrl": "https://youtu.be/dQw4w9WgXcQ",
-      "description": "Age: 26  Sign:  Favourite animal:  Favourite TV show:  Favourite throw: Hammer Favourite Ultimate memory:  How to reach out: "
+      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: Hammer \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/rphldrn/ "
     },
     {
       "number": 88,
