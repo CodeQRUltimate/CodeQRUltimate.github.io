@@ -1,67 +1,98 @@
 {
+  "teamName": "Code QR Ultimate",
+  "teamImageUrl": "/img/mainpage1.jpg",
+  "lineups": [
+    {
+      "key": "2021-A",
+      "year": 2021,
+      "name": "Alignement récréatif automne",
+      "playerNumbers": [88, 13]
+    },
+    {
+      "key": "2021-E",
+      "year": 2021,
+      "name": "Alignement récréatif été",
+      "playerNumbers": [88, 36]
+    },
+    {
+      "key": "2020-E",
+      "year": 2020,
+      "name": "Alignement récréatif été",
+      "playerNumbers": [88, 45]
+    }
+  ],
   "players": [
     {
       "number": 5,
-      "name": "Jan Felix Scholtes",
+      "firstName": "Jan Felix",
+      "lastName": "Scholtes",
       "imageUrl": "/img/janfelixscholtes1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: "
     },
     {
       "number": 7,
-      "name": "Johanie Gonneville",
+      "firstName": "Johanie",
+      "lastName": "Gonneville",
       "imageUrl": "/img/johaniegonneville1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/johanieg/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/johanieg/ "
     },
     {
       "number": 13,
-      "name": "Frédéric Grisé",
+      "firstName": "Frédéric",
+      "lastName": "Grisé",
       "imageUrl": "/img/fredericgrise1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age: 27 \n Sign: Leo \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/fredgrise/ "
+      "description": "Age: 27<br/>Sign: Leo<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/fredgrise/ "
     },
     {
       "number": 36,
-      "name": "Maxime Jacquemont",
+      "firstName": "Maxime",
+      "lastName": "Jacquemont",
       "imageUrl": "/img/maximejacquemont1.jpg",
       "memeUrl": "XXXXXXXXXX",
-      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/max.jackk/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/max.jackk/ "
     },
     {
       "number": 45,
-      "name": "Mathieu Boisvert-Désilets",
+      "firstName": "Mathieu",
+      "lastName": "Boisvert-Désilets",
       "imageUrl": "/img/mathieuboisvertdesilets1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/mathboisvert/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/mathboisvert/ "
     },
     {
       "number": 53,
-      "name": "Joëlle Laferrière",
+      "firstName": "Joëlle",
+      "lastName": "Laferrière",
       "imageUrl": "/img/joellelaferriere1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/joellelaf/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/joellelaf/ "
     },
     {
       "number": 55,
-      "name": "Nalini Gascon",
+      "firstName": "Nalini",
+      "lastName": "Gascon",
       "imageUrl": "/img/nalinigascon1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/nalinigascon/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/nalinigascon/ "
     },
     {
       "number": 66,
-      "name": "Raphael Drouin",
+      "firstName": "Raphael",
+      "lastName": "Drouin",
       "imageUrl": "/img/raphaeldrouin1.jpg",
       "memeUrl": "https://youtu.be/dQw4w9WgXcQ",
-      "description": "Age: \n Sign: \n Favourite animal: \n Favourite TV show: \n Favourite throw: Hammer \n Favourite Ultimate memory: \n How to reach me: https://www.instagram.com/rphldrn/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw: Hammer<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/rphldrn/ "
     },
     {
       "number": 88,
-      "name": "Ludovic Cao",
+      "firstName": "Ludovic",
+      "lastName": "Cao",
       "imageUrl": "/img/ludoviccao1.jpg",
       "memeUrl": "https://tinder.com/@ludoviccao",
-      "description": "Age: 27 \n Sign: Sagittarius \n Favourite animal: Giraffe \n Favourite TV show: Occupation Double (duh) \n Favourite throw: Reverse Haxi-Maxi \n Favourite Ultimate memory: Throwing a long pass endzone to endzone to my friend Marie-Helene guarded by Quentin Bonnaud (Royal 2019 MVP) in Universe point, winning us the last game of the winter league season \n How to reach out: <a href=\"https://www.instagram.com/ludovic.cao\">https://www.instagram.com/ludovic.cao</a> "
+      "description": "Age: 27<br/>Sign: Sagittarius<br/>Favourite animal: Giraffe<br/>Favourite TV show: Occupation Double (duh)<br/>Favourite throw: Reverse Haxi-Maxi<br/>Favourite Ultimate memory: Throwing a long pass endzone to endzone to my friend Marie-Helene guarded by Quentin Bonnaud (Royal 2019 MVP) in Universe point, winning us the last game of the winter league season<br/>How to reach out: <a href=\"https://www.instagram.com/ludovic.cao\">https://www.instagram.com/ludovic.cao</a> "
     }
   ]
 }
