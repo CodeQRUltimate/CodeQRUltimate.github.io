@@ -3,25 +3,33 @@
   "teamImageUrl": "/img/mainpage1.jpg",
   "lineups": [
     {
-      "key": "2021-A",
+      "key": "5v5M-A2021",
       "year": 2021,
-      "name": "Alignement récréatif automne",
-      "playerNumbers": [88, 13]
+      "name": "Alignement automne 5c5 mixte récréatif",
+      "playerNumbers": [5,6,7,13,36,45,53,55,66,88]
     },
     {
-      "key": "2021-E",
+      "key": "5v5M-E2021",
       "year": 2021,
-      "name": "Alignement récréatif été",
-      "playerNumbers": [88, 36]
+      "name": "Alignement été 5c5 mixte récréatif",
+      "playerNumbers": [1,5,7,26,36,45,53,66,88]
     },
     {
-      "key": "2020-E",
+      "key": "5v5M-E2020",
       "year": 2020,
-      "name": "Alignement récréatif été",
+      "name": "Alignement été 5c5 mixte récréatif",
       "playerNumbers": [88, 45]
     }
   ],
   "players": [
+    {
+      "number": 1,
+      "firstName": "Lea",
+      "lastName": "Beauchamp-Yergeau",
+      "imageUrl": "/img/leabeauchampyergeau1.jpg",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/leabeauchampy\">https://www.instagram.com/leabeauchampy</a> "
+    },
     {
       "number": 5,
       "firstName": "Jan Felix",
@@ -31,12 +39,20 @@
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: "
     },
     {
+      "number": 6,
+      "firstName": "Ann-Sophie",
+      "lastName": "Boily",
+      "imageUrl": "/img/annsophieboily1.jpg",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/__ann.sophie\">https://www.instagram.com/__ann.sophie</a> "
+    },
+    {
       "number": 7,
       "firstName": "Johanie",
       "lastName": "Gonneville",
       "imageUrl": "/img/johaniegonneville1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/johanieg/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/johanieg\">https://www.instagram.com/johanieg</a> "
     },
     {
       "number": 13,
@@ -44,7 +60,15 @@
       "lastName": "Grisé",
       "imageUrl": "/img/fredericgrise1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age: 27<br/>Sign: Leo<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/fredgrise/ "
+      "description": "Age: 27<br/>Sign: Leo<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/fredgrise\">https://www.instagram.com/fredgrise</a> "
+    },
+    {
+      "number": 27,
+      "firstName": "Kevin",
+      "lastName": "Chen",
+      "imageUrl": "/img/kevinchen1.jpg",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age: <br/>Sign: <br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/kaiminchen\">https://www.instagram.com/kaiminchen</a> "
     },
     {
       "number": 36,
@@ -52,7 +76,7 @@
       "lastName": "Jacquemont",
       "imageUrl": "/img/maximejacquemont1.jpg",
       "memeUrl": "XXXXXXXXXX",
-      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/max.jackk/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/max.jackk\">https://www.instagram.com/max.jackk</a> "
     },
     {
       "number": 45,
@@ -60,7 +84,7 @@
       "lastName": "Boisvert-Désilets",
       "imageUrl": "/img/mathieuboisvertdesilets1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/mathboisvert/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/mathboisvert\">https://www.instagram.com/mathboisvert</a> "
     },
     {
       "number": 53,
@@ -68,7 +92,7 @@
       "lastName": "Laferrière",
       "imageUrl": "/img/joellelaferriere1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/joellelaf/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/joellelaf\">https://www.instagram.com/joellelaf</a> "
     },
     {
       "number": 55,
@@ -76,7 +100,7 @@
       "lastName": "Gascon",
       "imageUrl": "/img/nalinigascon1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
-      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/nalinigascon/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/nalinigascon\">https://www.instagram.com/nalinigascon</a> "
     },
     {
       "number": 66,
@@ -84,7 +108,7 @@
       "lastName": "Drouin",
       "imageUrl": "/img/raphaeldrouin1.jpg",
       "memeUrl": "https://youtu.be/dQw4w9WgXcQ",
-      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw: Hammer<br/>Favourite Ultimate memory:<br/>How to reach me: https://www.instagram.com/rphldrn/ "
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw: Hammer<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/rphldrn\">https://www.instagram.com/rphldrn</a> "
     },
     {
       "number": 88,
@@ -92,7 +116,7 @@
       "lastName": "Cao",
       "imageUrl": "/img/ludoviccao1.jpg",
       "memeUrl": "https://tinder.com/@ludoviccao",
-      "description": "Age: 27<br/>Sign: Sagittarius<br/>Favourite animal: Giraffe<br/>Favourite TV show: Occupation Double (duh)<br/>Favourite throw: Reverse Haxi-Maxi<br/>Favourite Ultimate memory: Throwing a long pass endzone to endzone to my friend Marie-Helene guarded by Quentin Bonnaud (Royal 2019 MVP) in Universe point, winning us the last game of the winter league season<br/>How to reach out: <a href=\"https://www.instagram.com/ludovic.cao\">https://www.instagram.com/ludovic.cao</a> "
+      "description": "Age: 27<br/>Sign: Sagittarius<br/>Favourite animal: Giraffe<br/>Favourite TV show: Occupation Double (duh)<br/>Favourite throw: Reverse Haxi-Maxi<br/>Favourite Ultimate memory: Throwing a long pass endzone to endzone to my friend Marie-Helene guarded by Quentin Bonnaud (Royal 2019 MVP) in Universe point, winning us the last game of the winter league season<br/>How to reach me: <a href=\"https://www.instagram.com/ludovic.cao\">https://www.instagram.com/ludovic.cao</a> "
     }
   ]
 }
