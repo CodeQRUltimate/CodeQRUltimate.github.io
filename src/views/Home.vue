@@ -1,54 +1,70 @@
 <i18n>
 {
-  "en": {},
-  "fr": {}
+  "en": {
+    "allPlayers": "View all players"
+  },
+  "fr": {
+    "allPlayers": "Voir tous les joueurs"
+  }
 }
 </i18n>
 
 <template>
-  <div class="text-center mx-auto" style="max-width: 800px">
-    <h1 class="text-white font-light text-8xl">Équipe à Lus</h1>
+  <div class="mx-auto" style="max-width: 800px">
+    <h1 class="text-center font-light text-8xl">{{ data.teamName }}</h1>
+    <div class="bg-white rounded-lg text-center p-3 mr-5 mb-10">
+      <img :src="data.teamImageUrl" class="rounded-lg" />
+      <a :href="qrCodeUrl" class="inline-block rounded hover:bg-gray-100 mt-3">
+        <QrCode :value="qrCodeUrl" />
+      </a>
+    </div>
+    <div class="text-xl mb-10">
+      <router-link :to="{ name: 'players' }">
+        {{ $t("allPlayers") }}
+      </router-link>
+    </div>
     <div>
-      <div v-for="player in players" :key="player.number" class="mt-12">
-        <div class="flex items-baseline text-graduate text-white">
-          <div class="text-6xl text-left w-20 mr-4">{{ player.number }}</div>
-          <div class="text-4xl">
-            <router-link
-              :to="{ name: 'player', params: { playerNumber: player.number } }"
-            >
-              {{ player.name }}
-            </router-link>
-          </div>
+      <div v-for="{ year, lineups } in lineupsByYear" :key="year" class="mb-10">
+        <h2 class="text-3xl border-b mb-5">{{ year }}</h2>
+        <div v-for="lineup in lineups" :key="year + lineup.name" class="mb-5">
+          <router-link
+            :to="{ name: 'lineup', params: { lineupKey: lineup.key } }"
+            class="text-xl"
+          >
+            {{ lineup.name }}
+          </router-link>
         </div>
-        <QrCode :value="getQrCodeUrlForPlayer(player)" class="mx-auto hidden" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState, mapActions } from "vuex";
+import { mapState, mapGetters } from "vuex";
 import QrCode from "@chenfengyuan/vue-qrcode";
 
 export default {
   name: "Home",
   computed: {
     ...mapState(["data"]),
+    ...mapGetters(["lineupsByYear"]),
     playerKey() {
       return this.$route.query.player;
     },
     players() {
       return this.data?.players || [];
+    },
+    qrCodeUrl() {
+      return window.location.origin;
     }
   },
   methods: {
-    ...mapActions(["getData"]),
-    getQrCodeUrlForPlayer(player) {
-      return `${window.location.origin}${window.location.pathname}${window.location.hash}players/${player.number}`;
+    getPlayersForLineup(lineup) {
+      return lineup.playerNumbers.map(this.getPlayerByNumber);
+    },
+    getPlayerByNumber(playerNumber) {
+      return this.players.find(x => x.number === playerNumber);
     }
-  },
-  mounted() {
-    this.getData();
   },
   components: { QrCode }
 };

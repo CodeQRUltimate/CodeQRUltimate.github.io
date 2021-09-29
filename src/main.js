@@ -5,7 +5,6 @@ import store from "./store";
 import i18n from "./i18n";
 import { sync } from "vuex-router-sync";
 
-import "./registerServiceWorker";
 import "./importBaseComponents";
 
 import dayjs from "dayjs";

@@ -1,27 +1,32 @@
 <template>
-  <div class="bg-primary">
-    <router-link to="/" class="text-white font-bold p-2 inline-block"
+  <div class="bg-primary mx-auto px-3" style="max-width: 800px">
+    <router-link to="/" class="font-bold p-2 inline-block"
       >Retour à l'équipe</router-link
     >
 
     <div v-if="player">
-      <div class="flex flex-wrap justify-center items-end">
-        <BaseStitchedContainer class="mr-5">
-          <img
-            :src="player.imageUrl"
-            class="rounded-lg"
-            style="max-height: 75vh;"
-          />
-        </BaseStitchedContainer>
-        <div class="text-white">
-          <div class="text-graduate mr-10">
-            <div class="player-number text-9xl text-white leading-none">
-              {{ player.number }}
-            </div>
-            <div class="text-6xl ml-2">{{ player.name }}</div>
-          </div>
-          <div class="border-t border-b-4 border-white pb-1 ml-2 mb-4"></div>
-          <p class="text-xl ml-2 mb-4">{{ player.description }}</p>
+      <div class="flex items-end text-graduate mr-10">
+        <div class="text-shadow-swag text-9xl leading-none">
+          {{ player.number }}
+        </div>
+        <div class="flex-grow ml-2">
+          <div class="text-3xl -mb-4">{{ player.firstName }}</div>
+          <div class="text-5xl -mb-1">{{ player.lastName }}</div>
+        </div>
+      </div>
+      <div class="border-t border-b-4 border-white pb-1 mb-6"></div>
+      <div class="flex flex-col md:flex-row">
+        <div class="self-center bg-white rounded-lg text-center p-3 mb-6 mr-6">
+          <img :src="player.imageUrl" class="rounded-lg max-w-sm" />
+          <a
+            :href="qrCodeUrl"
+            class="inline-block rounded hover:bg-gray-100 mt-3"
+          >
+            <QrCode :value="qrCodeUrl" />
+          </a>
+        </div>
+        <div>
+          <p v-html="player.description" class="text-xl text-wrap mb-4"></p>
         </div>
       </div>
     </div>
@@ -30,17 +35,18 @@
 
 <script>
 import { mapGetters } from "vuex";
+import QrCode from "@chenfengyuan/vue-qrcode";
 
 export default {
   name: "Player",
   computed: {
-    ...mapGetters(["player"])
-  }
+    ...mapGetters(["player"]),
+    qrCodeUrl() {
+      return `${window.location.origin}/players/${this.player.number}?qr=1`;
+    }
+  },
+  components: { QrCode }
 };
 </script>
 
-<style scoped lang="scss">
-.player-number {
-  text-shadow: 2px 2px 0px #312e81, 4px 4px 0px #ecc94b;
-}
-</style>
+<style scoped lang="scss"></style>
