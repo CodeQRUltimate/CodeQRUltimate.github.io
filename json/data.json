@@ -12,7 +12,7 @@
       "key": "5v5M-E2021",
       "year": 2021,
       "name": "Alignement été 5c5 mixte récréatif",
-      "playerNumbers": [1,5,7,26,36,45,53,66,88]
+      "playerNumbers": [1,5,7,10,26,36,45,53,66,88]
     },
     {
       "key": "5v5M-E2020",
@@ -53,6 +53,14 @@
       "imageUrl": "/img/johaniegonneville1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/johanieg\">My Instagram</a> "
+    },
+    {
+      "number": 10,
+      "firstName": "Dominique",
+      "lastName": "Lefebvre",
+      "imageUrl": "/img/dominiquelefebvre1.jpg",
+      "memeUrl": "XXXXXXXXXXXX",
+      "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/domlafeve\">My Instagram</a> "
     },
     {
       "number": 13,
