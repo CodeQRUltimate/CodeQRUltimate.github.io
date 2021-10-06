@@ -1,6 +1,7 @@
 {
+  "dataOrigin": "https://raw.githubusercontent.com/CodeQRUltimate/CodeQRUltimate.github.io",
   "teamName": "Code QR Ultimate",
-  "teamImageUrl": "/img/mainpage1.jpg",
+  "teamImageUrl": "~/img/mainpage1.jpg",
   "lineups": [
     {
       "key": "5v5M-A2021",
@@ -26,7 +27,7 @@
       "number": 1,
       "firstName": "Lea",
       "lastName": "Beauchamp-Yergeau",
-      "imageUrl": "/img/leabeauchampyergeau1.jpg",
+      "imageUrl": "~/img/leabeauchampyergeau1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/leabeauchampy\">My Instagram</a> "
     },
@@ -34,7 +35,7 @@
       "number": 5,
       "firstName": "Jan Felix",
       "lastName": "Scholtes",
-      "imageUrl": "/img/janfelixscholtes1.jpg",
+      "imageUrl": "~/img/janfelixscholtes1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: "
     },
@@ -42,7 +43,7 @@
       "number": 6,
       "firstName": "Ann-Sophie",
       "lastName": "Boily",
-      "imageUrl": "/img/annsophieboily1.jpg",
+      "imageUrl": "~/img/annsophieboily1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/__ann.sophie\">My Instagram</a> "
     },
@@ -58,7 +59,7 @@
       "number": 10,
       "firstName": "Dominique",
       "lastName": "Lefebvre",
-      "imageUrl": "/img/dominiquelefebvre1.jpg",
+      "imageUrl": "~/img/dominiquelefebvre1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/domlafeve\">My Instagram</a> "
     },
@@ -66,7 +67,7 @@
       "number": 13,
       "firstName": "Frédéric",
       "lastName": "Grisé",
-      "imageUrl": "/img/fredericgrise1.jpg",
+      "imageUrl": "~/img/fredericgrise1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age: 27<br/>Sign: Leo<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/fredgrise\">My Instagram</a> "
     },
@@ -74,7 +75,7 @@
       "number": 27,
       "firstName": "Kevin",
       "lastName": "Chen",
-      "imageUrl": "/img/kevinchen1.jpg",
+      "imageUrl": "~/img/kevinchen1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age: <br/>Sign: <br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/kaiminchen\">My Instagram</a> "
     },
@@ -82,7 +83,7 @@
       "number": 36,
       "firstName": "Maxime",
       "lastName": "Jacquemont",
-      "imageUrl": "/img/maximejacquemont1.jpg",
+      "imageUrl": "~/img/maximejacquemont1.jpg",
       "memeUrl": "XXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/max.jackk\">My Instagram</a> "
     },
@@ -90,7 +91,7 @@
       "number": 45,
       "firstName": "Mathieu",
       "lastName": "Boisvert-Désilets",
-      "imageUrl": "/img/mathieuboisvertdesilets1.jpg",
+      "imageUrl": "~/img/mathieuboisvertdesilets1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/mathboisvert\">My Instagram</a> "
     },
@@ -98,7 +99,7 @@
       "number": 53,
       "firstName": "Joëlle",
       "lastName": "Laferrière",
-      "imageUrl": "/img/joellelaferriere1.jpg",
+      "imageUrl": "~/img/joellelaferriere1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/joellelaf\">My Instagram</a> "
     },
@@ -106,7 +107,7 @@
       "number": 55,
       "firstName": "Nalini",
       "lastName": "Gascon",
-      "imageUrl": "/img/nalinigascon1.jpg",
+      "imageUrl": "~/img/nalinigascon1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/nalinigascon\">My Instagram</a> "
     },
@@ -114,7 +115,7 @@
       "number": 66,
       "firstName": "Raphael",
       "lastName": "Drouin",
-      "imageUrl": "/img/raphaeldrouin1.jpg",
+      "imageUrl": "~/img/raphaeldrouin1.jpg",
       "memeUrl": "https://youtu.be/dQw4w9WgXcQ",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw: Hammer<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/rphldrn\">My Instagram</a> "
     },
@@ -122,7 +123,7 @@
       "number": 88,
       "firstName": "Ludovic",
       "lastName": "Cao",
-      "imageUrl": "/img/ludoviccao1.jpg",
+      "imageUrl": "~/img/ludoviccao1.jpg",
       "memeUrl": "https://tinder.com/@ludoviccao",
       "description": "Age: 27<br/>Sign: Sagittarius<br/>Favourite animal: Giraffe<br/>Favourite TV show: Occupation Double (duh)<br/>Favourite throw: Reverse Haxi-Maxi<br/>Favourite Ultimate memory: Throwing a long pass endzone to endzone to my friend Marie-Helene guarded by Quentin Bonnaud (Royal 2019 MVP) in Universe point, winning us the last game of the winter league season<br/>How to reach me: <a href=\"https://www.instagram.com/ludovic.cao\">My Instagram</a> "
     }
