@@ -13,7 +13,7 @@
       "key": "5v5M-E2021",
       "year": 2021,
       "name": "Alignement été 5c5 mixte récréatif",
-      "playerNumbers": [1,5,7,10,26,36,45,53,66,88]
+      "playerNumbers": [1,5,7,10,27,36,45,53,66,88]
     },
     {
       "key": "5v5M-E2020",
@@ -29,6 +29,14 @@
       "lastName": "Beauchamp-Yergeau",
       "imageUrl": "~/img/leabeauchampyergeau1.jpg",
       "memeUrl": "XXXXXXXXXXXX",
+      "birthDate": "2000-01-01",
+      "zodiacSign": "",
+      "topEmojis": ["👌", "🐱‍👤"],
+      "recommendedRestaurant": "",
+      "recommendedArtist": "",
+      "favoriteThrow": "",
+      "favoriteUltimateMemory": "",
+      "instagramUsername": "",
       "description": "Age:<br/>Sign:<br/>Favourite animal:<br/>Favourite TV show:<br/>Favourite throw:<br/>Favourite Ultimate memory:<br/>How to reach me: <a href=\"https://www.instagram.com/leabeauchampy\">My Instagram</a> "
     },
     {
