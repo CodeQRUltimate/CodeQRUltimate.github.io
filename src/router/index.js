@@ -26,6 +26,12 @@ const routes = [
     name: "player",
     component: () =>
       import(/* webpackChunkName: "player" */ "../views/Player.vue")
+  },
+  {
+    path: "/players/:playerNumber/meme",
+    name: "playerMeme",
+    component: () =>
+      import(/* webpackChunkName: "player" */ "../views/Player.vue")
   }
 ];
 

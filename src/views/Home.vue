@@ -11,11 +11,14 @@
 
 <template>
   <div class="mx-auto" style="max-width: 800px">
-    <h1 class="text-center font-light text-8xl">{{ data.teamName }}</h1>
+    <h1 class="text-center text-graduate text-7xl">{{ data.teamName }}</h1>
     <div class="bg-white rounded-lg text-center p-3 mr-5 mb-10">
-      <img :src="data.teamImageUrl" class="rounded-lg" />
+      <img :src="resolveUrl(data.teamImageUrl)" class="rounded-lg" />
       <a :href="qrCodeUrl" class="inline-block rounded hover:bg-gray-100 mt-3">
-        <QrCode :value="qrCodeUrl" />
+        <QrCode
+          :value="qrCodeUrl"
+          :options="{ errorCorrectionLevel: 'high' }"
+        />
       </a>
     </div>
     <div class="text-xl mb-10">
@@ -47,7 +50,7 @@ export default {
   name: "Home",
   computed: {
     ...mapState(["data"]),
-    ...mapGetters(["lineupsByYear"]),
+    ...mapGetters(["lineupsByYear", "resolveUrl"]),
     playerKey() {
       return this.$route.query.player;
     },

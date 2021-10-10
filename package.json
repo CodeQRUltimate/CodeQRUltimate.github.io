@@ -9,9 +9,10 @@
     "deploy": "npm run build && echo CodeQRUltimate.github.io >> ./dist/CNAME && gh-pages -d dist"
   },
   "dependencies": {
+    "@chenfengyuan/vue-qrcode": "^1.0.2",
     "core-js": "^3.6.4",
     "lodash": "4.17.21",
-    "@chenfengyuan/vue-qrcode": "^1.0.2",
+    "dayjs": "1.8.25",
     "register-service-worker": "^1.6.2",
     "tailwindcss": "^1.4.0",
     "vue": "^2.6.11",
@@ -29,7 +30,6 @@
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.0.3",
-    "dayjs": "1.8.25",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",

@@ -13,9 +13,13 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    route: {},
+    route: {
+      params: {},
+      name: ""
+    },
     locale: i18n.locale.substring(0, 2),
     data: {
+      dataOrigin: "",
       players: [],
       lineups: []
     }
@@ -24,12 +28,13 @@ export default new Vuex.Store({
     playerNumber: state => Number(state.route.params.playerNumber),
     player: (state, getters) =>
       state.data.players.find(x => x.number === getters.playerNumber),
-    shouldRedirectToMemeUrl: state => state.route.query.qr === "1",
+    shouldRedirectToMemeUrl: state => state.route.name === "playerMeme",
     lineupsByYear: state =>
       uniq(state.data.lineups.map(x => x.year)).map(year => ({
         year: year,
         lineups: state.data.lineups.filter(x => x.year === year)
-      }))
+      })),
+    resolveUrl: state => url => url?.replace("~", state.data.dataOrigin) ?? ""
   },
   mutations: {
     LOCALE_SET: (state, locale) => {
@@ -45,11 +50,15 @@ export default new Vuex.Store({
       i18n.locale = locale;
       dayjs.locale(locale);
     },
-    async getData({ commit, getters }) {
-      const response = await fetch("/json/data.json");
+    async getData({ commit, dispatch }) {
+      const response = await fetch(
+        "https://raw.githubusercontent.com/CodeQRUltimate/CodeQRUltimate.github.io/data/data.json"
+      );
       const data = await response.json();
       commit("DATA_SET", data);
-
+      await dispatch("checkMemeRedirection");
+    },
+    checkMemeRedirection({ getters }) {
       if (getters.player && getters.shouldRedirectToMemeUrl) {
         window.location = getters.player.memeUrl;
       }
