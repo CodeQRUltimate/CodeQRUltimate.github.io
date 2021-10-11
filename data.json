@@ -39,6 +39,22 @@
       "instagramUsername": "leabeauchampy",
       "description": ""
     },
+       {
+      "number": 3,
+      "firstName": "Ann-Sophie",
+      "lastName": "Boily",
+      "imageUrl": "~/img/annsophieboily2.jpg",
+      "memeUrl": "https://www.instagram.com/__ann.sophie",
+      "birthDate": "1995-10-26",
+      "zodiacSign": "Scorpion",
+      "topEmojis": ["🔥", "🙌🏼","✨"],
+      "recommendedRestaurant": "<a href=\"https://goo.gl/maps/ZSzad59isxjPFPgA7\">Aux Vivres</a>",
+      "recommendedArtist": "<a href=\"https://open.spotify.com/artist/1Mnw1xS9MvW7sgitmlqnCM\">P'tit Belliveau</a>",
+      "favoriteThrow": "Inside-Out",
+      "favoriteUltimateMemory": "Toutes les éditions de La P’tite vite du capitaine à Gaspé",
+      "instagramUsername": "__ann.sophie",
+      "description": ""
+    },
     {
       "number": 5,
       "firstName": "Jan Felix",
@@ -53,22 +69,6 @@
       "favoriteThrow": "Airbounce",
       "favoriteUltimateMemory": "Ligue d'été du dimanche soir",
       "instagramUsername": "N/A",
-      "description": ""
-    },
-    {
-      "number": 3,
-      "firstName": "Ann-Sophie",
-      "lastName": "Boily",
-      "imageUrl": "~/img/annsophieboily2.jpg",
-      "memeUrl": "https://www.instagram.com/__ann.sophie",
-      "birthDate": "1995-10-26",
-      "zodiacSign": "Scorpion",
-      "topEmojis": ["🔥", "🙌🏼","✨"],
-      "recommendedRestaurant": "<a href=\"https://goo.gl/maps/ZSzad59isxjPFPgA7\">Aux Vivres</a>",
-      "recommendedArtist": "<a href=\"https://open.spotify.com/artist/1Mnw1xS9MvW7sgitmlqnCM\">P'tit Belliveau</a>",
-      "favoriteThrow": "Inside-Out",
-      "favoriteUltimateMemory": "Toutes les éditions de La P’tite vite du capitaine à Gaspé",
-      "instagramUsername": "__ann.sophie",
       "description": ""
     },
     {
