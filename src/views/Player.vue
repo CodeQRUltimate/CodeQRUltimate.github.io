@@ -2,6 +2,8 @@
 {
   "en": {
     "age": "Age",
+    "backToLineup": "Back to lineup",
+    "backToPlayers": "Back to players",
     "emojis": "Emojis",
     "favoriteThrow": "Favourite throw",
     "favoriteUltimateMemory": "Ultimate memory",
@@ -11,6 +13,8 @@
   },
   "fr": {
     "age": "Âge",
+    "backToLineup": "Retour à l'alignement",
+    "backToPlayers": "Retour aux joueurs",
     "emojis": "Emojis",
     "favoriteThrow": "Lancer de choix",
     "favoriteUltimateMemory": "Souvenir d'Ultimate",
@@ -22,58 +26,82 @@
 </i18n>
 
 <template>
-  <div class="bg-primary mx-auto px-3" style="max-width: 800px">
-    <router-link :to="{ name: 'players' }" class="font-bold p-2 inline-block"
-      >Retour aux joueurs</router-link
+  <div class="mx-auto" style="max-width: 800px;">
+    <BodyBackgroundImage v-if="player" :url="resolveUrl(player.imageUrl)" />
+    <LinkBack
+      v-if="lineupKey"
+      :to="{ name: 'lineup', params: { lineupKey } }"
+      >{{ $t("backToLineup") }}</LinkBack
     >
-
-    <div v-if="player">
-      <div class="flex items-end text-graduate mr-10">
-        <div class="text-shadow-swag text-9xl leading-none">
-          {{ player.number }}
-        </div>
-        <div class="flex-grow ml-2">
-          <div class="text-3xl -mb-4">{{ player.firstName }}</div>
-          <div v-if="player.lastName.length <= 10" class="text-6xl -mb-3">
-            {{ player.lastName }}
-          </div>
-          <div v-else class="text-5xl -mb-1">{{ player.lastName }}</div>
-        </div>
-      </div>
-      <div class="border-t border-b-4 border-white pb-1 mb-6"></div>
-      <div class="flex flex-col md:flex-row">
-        <div
-          class="self-center flex-shrink-0 bg-white rounded-lg text-center p-3 mb-6 mr-6 max-w-full"
-        >
+    <LinkBack v-else :to="{ name: 'players' }">{{
+      $t("backToPlayers")
+    }}</LinkBack>
+    <div
+      class="mb-5 p-3 md:rounded-lg bg-black bg-opacity-50 md:border border-opacity-50 border-white"
+      style="backdrop-filter: blur(8px);"
+    >
+      <div v-if="player">
+        <div class="flex flex-col md:flex-row">
           <div
-            class="rounded-lg w-full h-full bg-cover bg-center max-w-full"
-            :style="{
-              'background-image':
-                'url(\'' + resolveUrl(player.imageUrl) + '\')',
-              width: '4in',
-              height: '6in'
-            }"
-          ></div>
-          <a
-            :href="qrCodeUrl"
-            class="inline-block rounded hover:bg-gray-100 mt-3"
+            class="self-center flex-shrink-0 bg-white rounded-lg text-center p-1 mb-6 md:mb-0 md:mr-6 max-w-full"
           >
-            <QrCode
-              :value="qrCodeUrl"
-              :options="{ errorCorrectionLevel: 'high' }"
-            />
-          </a>
-        </div>
-        <div>
-          <div
-            v-for="item in descriptionItems"
-            :key="item[0]"
-            class="flex mb-2"
-          >
-            <div class="font-semibold w-32 mr-2 flex-shrink-0">
-              {{ item[0] }}
+            <div
+              class="relative rounded-lg w-full h-full bg-cover bg-center max-w-full"
+              :style="{
+                'background-image':
+                  'url(\'' + resolveUrl(player.imageUrl) + '\')',
+                width: '4in',
+                height: '6in'
+              }"
+            >
+              <div class="flex flex-col h-full text-graduate text-left">
+                <div class="mt-auto mb-8">
+                  <div class="border-t-2 border-b-2 border-white">
+                    <div class="bg-primary text-lg md:text-xl pl-3">
+                      {{ player.firstName }}
+                    </div>
+                    <div class="bg-black pl-3">
+                      <div
+                        v-if="player.lastName.length <= 10"
+                        class="text-2xl md:text-4xl leading-tight"
+                      >
+                        {{ player.lastName }}
+                      </div>
+                      <div v-else class="text-xl md:text-2xl leading-loose">
+                        {{ player.lastName }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-0 right-0 flex items-center justify-around text-5xl md:text-5xl leading-none mb-6 mr-2 rounded-full border-2 border-white bg-black w-20 h-20 md:w-24 md:h-24"
+                >
+                  {{ player.number }}
+                </div>
+                <div
+                  class="absolute top-0 right-0 flex items-center justify-around text-5xl md:text-5xl leading-none rounded-bl-lg border-l-2 border-b-2 border-white"
+                >
+                  <a :href="qrCodeUrl" target="_blank">
+                    <QrCode
+                      :value="qrCodeUrl"
+                      :options="{ errorCorrectionLevel: 'high', width: 125 }"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div v-html="item[1]" class=""></div>
+          </div>
+          <div class="text-lg">
+            <div
+              v-for="item in descriptionItems"
+              :key="item[0]"
+              class="item mb-4"
+            >
+              <div class="font-semibold">
+                {{ item[0] }}
+              </div>
+              <div v-html="item[1]" class=""></div>
+            </div>
           </div>
         </div>
       </div>
@@ -83,12 +111,15 @@
 
 <script>
 import dayjs from "dayjs";
-import { mapGetters, mapActions } from "vuex";
+import { mapState, mapGetters, mapActions } from "vuex";
 import QrCode from "@chenfengyuan/vue-qrcode";
+import BodyBackgroundImage from "../components/BodyBackgroundImage.vue";
+import LinkBack from "../components/LinkBack.vue";
 
 export default {
   name: "Player",
   computed: {
+    ...mapState(["route"]),
     ...mapGetters(["player", "resolveUrl"]),
     qrCodeUrl() {
       return `${window.location.origin}/#/players/${this.player.number}/meme`;
@@ -131,18 +162,23 @@ export default {
       }
 
       return items;
-    }
-  },
-  watch: {
-    $route() {
-      this.checkMemeRedirection();
+    },
+    lineupKey() {
+      return this.route.query.lineup;
     }
   },
   methods: {
     ...mapActions(["checkMemeRedirection"])
   },
-  components: { QrCode }
+  mounted() {
+    this.checkMemeRedirection();
+  },
+  components: { LinkBack, BodyBackgroundImage, QrCode }
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.item /deep/ a {
+  text-decoration: underline;
+}
+</style>
