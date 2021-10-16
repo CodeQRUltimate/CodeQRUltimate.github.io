@@ -43,7 +43,7 @@
       <div v-if="player">
         <div class="flex flex-col md:flex-row">
           <div
-            class="self-center flex-shrink-0 bg-white rounded-lg text-center p-1 mb-6 md:mb-0 md:mr-6 max-w-full"
+            class="self-center md:self-start flex-shrink-0 bg-white rounded-lg text-center p-1 mb-6 md:mb-0 md:mr-6 max-w-full"
           >
             <div
               class="relative rounded-lg w-full h-full bg-cover bg-center max-w-full"
@@ -92,6 +92,13 @@
             </div>
           </div>
           <div class="text-lg">
+            <div v-if="player.instagramUsername" class="mb-4">
+              <a
+                :href="'https://www.instagram.com/' + player.instagramUsername"
+              >
+                <i class="fa fa-lg fa-instagram"></i>
+              </a>
+            </div>
             <div
               v-for="item in descriptionItems"
               :key="item[0]"
@@ -142,13 +149,13 @@ export default {
       if (this.player.recommendedRestaurant) {
         items.push([
           this.$t("recommendedRestaurant"),
-          this.player.recommendedRestaurant
+          `<a href="${this.player.recommendedRestaurant.url}" target="_blank" class="underline">${this.player.recommendedRestaurant.name}</a>`
         ]);
       }
       if (this.player.recommendedArtist) {
         items.push([
           this.$t("recommendedArtist"),
-          this.player.recommendedArtist
+          `<a href="${this.player.recommendedArtist.url}" target="_blank" class="underline">${this.player.recommendedArtist.name}</a>`
         ]);
       }
       if (this.player.favoriteThrow) {
@@ -177,8 +184,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.item /deep/ a {
-  text-decoration: underline;
-}
-</style>
+<style scoped lang="scss"></style>

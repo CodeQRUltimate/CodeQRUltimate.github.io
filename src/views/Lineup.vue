@@ -1,10 +1,12 @@
 <i18n>
 {
   "en": {
-    "backToLineups": "Back to lineups"
+    "backToLineups": "Back to lineups",
+    "results": "Results"
   },
   "fr": {
-    "backToLineups": "Retour aux alignements"
+    "backToLineups": "Retour aux alignements",
+    "results": "Résultats"
   }
 }
 </i18n>
@@ -26,6 +28,14 @@
       style="backdrop-filter: blur(8px);"
     >
       <h1 class="text-center md:text-3xl mb-5">{{ lineupName }}</h1>
+      <div v-if="lineup.resultsUrl" class="text-center">
+        <a
+          :href="lineup.resultsUrl"
+          target="_blank"
+          class="inline-block border border-white border-opacity-50 hover:border-opacity-100 transition-colors duration-200 mb-5 px-3 py-2 rounded"
+          >{{ $t("results") }}</a
+        >
+      </div>
       <div
         v-for="player in players"
         :key="player.number"
