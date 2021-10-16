@@ -95,6 +95,7 @@
             <div v-if="player.instagramUsername" class="mb-4">
               <a
                 :href="'https://www.instagram.com/' + player.instagramUsername"
+                target="_blank"
               >
                 <i class="fa fa-lg fa-instagram"></i>
               </a>
