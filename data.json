@@ -6,21 +6,30 @@
     {
       "key": "5v5M-A2021",
       "year": 2021,
-      "name": "Alignement automne 5c5 mixte récréatif",
+      "name": {
+        "fr": "Alignement automne 5c5 mixte récréatif",
+        "en": null
+      },
       "resultsUrl": "https://ugm.ultimatecentral.com/en_ca/e/ligues-rcratives-automne-2021/standings",
       "playerNumbers": [3,5,7,13,36,45,53,55,66,88]
     },
     {
       "key": "5v5M-E2021",
       "year": 2021,
-      "name": "Alignement été 5c5 mixte récréatif",
+      "name": {
+        "fr": "Alignement été 5c5 mixte récréatif",
+        "en": null
+      },
       "resultsUrl": "https://ugm.ultimatecentral.com/fr_ca/e/ligues-rcratives-t-2021/standings/stage/all/division/5c5+Montr%C3%A9al+Dimanche+-+Forbes",
       "playerNumbers": [2,5,7,10,27,36,45,53,66,88]
     },
     {
       "key": "5v5M-E2020",
       "year": 2020,
-      "name": "Alignement été 5c5 mixte récréatif",
+      "name": {
+        "fr": "Alignement été 5c5 mixte récréatif",
+        "en": null
+      },
       "resultsUrl": "https://ugm.ultimatecentral.com/en_ca/e/saison-estivale-2020/standings/division/5c5+Montr%C3%A9al+Dimanche+-+Forbes",
       "playerNumbers": [2,5,25,27,36,45,53,66,88]
     }
