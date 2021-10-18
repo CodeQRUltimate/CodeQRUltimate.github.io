@@ -33,7 +33,10 @@
       "imageUrl": "~/img/leabeauchampyergeau2.jpg",
       "memeUrl": "https://youtu.be/pqJGDwVMVn4",
       "birthDate": "1993-12-26",
-      "zodiacSign": "Capricorne",
+      "zodiacSign": {
+        "fr": "Capricorne",
+        "en": null
+      },
       "topEmojis": ["🥴", "🤷🏻‍♀️","💕"],
       "recommendedRestaurant": {
         "url": "https://g.page/BeaufortCafe?share",
@@ -43,19 +46,24 @@
         "url": "https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6",
         "name": "Avicii"
       },
-      "favoriteThrow": "Flick. C’est tout ce que je sais faire.",
+      "favoriteThrow": {
+        "fr": "Flick. C’est tout ce que je sais faire.",
+        "en": null
+      },
       "favoriteUltimateMemory": "Comm constru",
-      "instagramUsername": "leabeauchampy",
-      "description": ""
+      "instagramUsername": "leabeauchampy"
     },
-       {
+    {
       "number": 3,
       "firstName": "Ann-Sophie",
       "lastName": "Boily",
       "imageUrl": "~/img/annsophieboily2.jpg",
       "memeUrl": "https://www.instagram.com/__ann.sophie",
       "birthDate": "1995-10-26",
-      "zodiacSign": "Scorpion",
+      "zodiacSign": {
+        "fr": "Scorpion",
+        "en": null
+      },
       "topEmojis": ["🔥", "🙌🏼","✨"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/ZSzad59isxjPFPgA7",
@@ -65,7 +73,10 @@
         "url": "https://open.spotify.com/artist/1Mnw1xS9MvW7sgitmlqnCM",
         "name": "P'tit Belliveau"
       },
-      "favoriteThrow": "Inside-Out",
+      "favoriteThrow": {
+        "fr": "Inside-Out",
+        "en": null
+      },
       "favoriteUltimateMemory": "Toutes les éditions de La P’tite vite du capitaine à Gaspé",
       "instagramUsername": "__ann.sophie",
       "description": ""
@@ -77,7 +88,10 @@
       "imageUrl": "~/img/janfelixscholtes1.jpg",
       "memeUrl": "https://youtu.be/QH2-TGUlwu4",
       "birthDate": "1989-03-22",
-      "zodiacSign": "Bélier",
+      "zodiacSign": {
+        "fr": "Bélier",
+        "en": null
+      },
       "topEmojis": ["🤯", "🚜","🙃"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/9QDoHughwMqatLJ67",
@@ -87,9 +101,15 @@
         "url": "https://open.spotify.com/artist/09VbllcPqGQJMeI4ATkq1G",
         "name": "The Other Favorites"
       },
-      "favoriteThrow": "Airbounce",
-      "favoriteUltimateMemory": "Ligue d'été du dimanche soir",
-      "instagramUsername": "N/A",
+      "favoriteThrow": {
+        "fr": "Airbounce",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Ligue d'été du dimanche soir",
+        "en": null
+      },
+      "instagramUsername": "",
       "description": ""
     },
     {
@@ -99,7 +119,10 @@
       "imageUrl": "/img/johaniegonneville1.jpg",
       "memeUrl": "https://youtu.be/NqGslEZ5I6c",
       "birthDate": "1991-02-01",
-      "zodiacSign": "Verseau",
+      "zodiacSign": {
+        "fr": "Verseau",
+        "en": null
+      },
       "topEmojis": ["😂", "😍","🥳"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/WnSiCPbtJ1621yam8",
@@ -109,8 +132,14 @@
         "url": "https://open.spotify.com/artist/0lF1vCOKBjs21HtxkGmWIm",
         "name": "Clay and Friends"
       },
-      "favoriteThrow": "Hammer",
-      "favoriteUltimateMemory": "Le beach Ultimate 4c4",
+      "favoriteThrow": {
+        "fr": "Hammer",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Le beach Ultimate 4c4",
+        "en": null
+      },
       "instagramUsername": "johanieg",
       "description": ""
     },
@@ -121,7 +150,10 @@
       "imageUrl": "~/img/dominiquelefebvre1.jpg",
       "memeUrl": "https://youtu.be/G7RgN9ijwE4",
       "birthDate": "1992-06-27",
-      "zodiacSign": "Cancer ascendant Cancer",
+      "zodiacSign": {
+        "fr": "Cancer ascendant Cancer",
+        "en": null
+      },
       "topEmojis": ["😊", "❤","😁"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/oPb5cyuGrhC2y61Q9",
@@ -131,8 +163,14 @@
         "url": "https://open.spotify.com/artist/1G0YV9WooUBjrwDq0Q7EFK",
         "name": "Charlotte Cardin"
       },
-      "favoriteThrow": "Scoober",
-      "favoriteUltimateMemory": "CUC 2018",
+      "favoriteThrow": {
+        "fr": "Scoober",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "CUC 2018",
+        "en": null
+      },
       "instagramUsername": "domlafeve",
       "description": ""
     },
@@ -143,7 +181,10 @@
       "imageUrl": "~/img/fredericgrise3.jpg",
       "memeUrl": "https://simplesondage.com/",
       "birthDate": "1994-08-15",
-      "zodiacSign": "Lion",
+      "zodiacSign": {
+        "fr": "Lion",
+        "en": null
+      },
       "topEmojis": ["🙈", "🙉","🙊"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/MvJLSWw1X2NWDtSdA",
@@ -153,8 +194,14 @@
         "url": "https://open.spotify.com/artist/56tbeL5xhBPxby544GuK3E",
         "name": "Kevin Garrett"
       },
-      "favoriteThrow": "Chicken Wing",
-      "favoriteUltimateMemory": "Mon claquage",
+      "favoriteThrow": {
+        "fr": "Chicken Wing",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Mon claquage",
+        "en": null
+      },
       "instagramUsername": "fredgrise",
       "description": ""
     },
@@ -165,7 +212,10 @@
       "imageUrl": "~/img/evemasse1.jpg",
       "memeUrl": "XXXXXXX",
       "birthDate": "XXXXX",
-      "zodiacSign": "XXXXXXX",
+      "zodiacSign": {
+        "fr": "XXXXXXX",
+        "en": null
+      },
       "topEmojis": ["👌", "😂","👏"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/HZUZiJivoceAUGXeA",
@@ -175,8 +225,14 @@
         "url": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH",
         "name": "XXXX"
       },
-      "favoriteThrow": "XXX",
-      "favoriteUltimateMemory": "XXXXXXX",
+      "favoriteThrow": {
+        "fr": "XXX",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "XXXXXXX",
+        "en": null
+      },
       "instagramUsername": "evemasseofficiel",
       "description": ""
     },
@@ -187,7 +243,10 @@
       "imageUrl": "~/img/kevinchen1.jpg",
       "memeUrl": "https://www.spca.com/donnez/",
       "birthDate": "1989-06-27",
-      "zodiacSign": "Cancer",
+      "zodiacSign": {
+        "fr": "Cancer",
+        "en": null
+      },
       "topEmojis": ["👌", "😂","👏"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/HZUZiJivoceAUGXeA",
@@ -197,8 +256,14 @@
         "url": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH",
         "name": "Arctic Monkeys"
       },
-      "favoriteThrow": "Flick",
-      "favoriteUltimateMemory": "Sky Quentin Bonnaud dans un match compétitif avec Rage",
+      "favoriteThrow": {
+        "fr": "Flick",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Sky Quentin Bonnaud dans un match compétitif avec Rage",
+        "en": null
+      },
       "instagramUsername": "kaiminchen",
       "description": ""
     },
@@ -209,7 +274,10 @@
       "imageUrl": "~/img/maximejacquemont2.jpg",
       "memeUrl": "XXXXXXXXXX",
       "birthDate": "1994-06-28",
-      "zodiacSign": "Cancer",
+      "zodiacSign": {
+        "fr": "Cancer",
+        "en": null
+      },
       "topEmojis": ["😛", "😅","😂"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/m4CRGhZUUtUhS5AE9",
@@ -219,8 +287,14 @@
         "url": "https://open.spotify.com/track/7Lyu0d2vAHXmXtMV624Nfv?si=c93544f85eb24ec3",
         "name": "Fauve"
       },
-      "favoriteThrow": "High Release",
-      "favoriteUltimateMemory": "Gaspé",
+      "favoriteThrow": {
+        "fr": "High Release",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Gaspé",
+        "en": null
+      },
       "instagramUsername": "max.jackk",
       "description": ""
     },
@@ -231,7 +305,10 @@
       "imageUrl": "~/img/mathieuboisvertdesilets2.jpg",
       "memeUrl": "https://youtu.be/QsQYrW0Cc5Y",
       "birthDate": "1991-08-17",
-      "zodiacSign": "Lion",
+      "zodiacSign": {
+        "fr": "Lion",
+        "en": null
+      },
       "topEmojis": ["🙋‍♂️", "🦦","🙅‍♂️"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/m4CRGhZUUtUhS5AE9",
@@ -241,8 +318,14 @@
         "url": "https://open.spotify.com/artist/1r4hJ1h58CWwUQe3MxPuau",
         "name": "Maluma"
       },
-      "favoriteThrow": "Push Pass",
-      "favoriteUltimateMemory": "Gaspé",
+      "favoriteThrow": {
+        "fr": "Push Pass",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Gaspé",
+        "en": null
+      },
       "instagramUsername": "mathboisvert",
       "description": ""
     },
@@ -253,7 +336,10 @@
       "imageUrl": "~/img/joellelaferriere2.jpg",
       "memeUrl": "XXXXXXXXXXXX",
       "birthDate": "1995-02-08",
-      "zodiacSign": "Verseau",
+      "zodiacSign": {
+        "fr": "Verseau",
+        "en": null
+      },
       "topEmojis": ["🙋‍♂️", "🦦","🙅‍♂️"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/m4CRGhZUUtUhS5AE9",
@@ -263,8 +349,14 @@
         "url": "https://open.spotify.com/artist/1r4hJ1h58CWwUQe3MxPuau",
         "name": "XXX"
       },
-      "favoriteThrow": "XXX",
-      "favoriteUltimateMemory": "XXX",
+      "favoriteThrow": {
+        "fr": "XXX",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "XXX",
+        "en": null
+      },
       "instagramUsername": "joellelaf",
       "description": ""
     },
@@ -275,7 +367,10 @@
       "imageUrl": "~/img/nalinigascon2.jpg",
       "memeUrl": "https://open.spotify.com/track/5626KdflSKfeDK7RJQfSrE",
       "birthDate": "1996-01-17",
-      "zodiacSign": "Capricorne",
+      "zodiacSign": {
+        "fr": "Capricorne",
+        "en": null
+      },
       "topEmojis": ["👌", "🔥","🍀"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/S2gsY2xkYQbYQPZJ7",
@@ -285,8 +380,14 @@
         "url": "https://open.spotify.com/artist/1Dt1UKLtrJIW1xxRBejjos",
         "name": "The Blaze"
       },
-      "favoriteThrow": "High-release backhand dans le côté bris",
-      "favoriteUltimateMemory": "Championnat d'Europe des Clubs 2019 en Italie",
+      "favoriteThrow": {
+        "fr": "High-release backhand dans le côté bris",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Championnat d'Europe des Clubs 2019 en Italie",
+        "en": null
+      },
       "instagramUsername": "nalinigascon",
       "description": ""
     },
@@ -297,7 +398,10 @@
       "imageUrl": "~/img/raphaeldrouin3.jpg",
       "memeUrl": "https://bit.ly/3oAAi8c",
       "birthDate": "1994-12-06",
-      "zodiacSign": "Serpentaire",
+      "zodiacSign": {
+        "fr": "Serpentaire",
+        "en": null
+      },
       "topEmojis": ["😘", "💩","🍺"],
       "recommendedRestaurant": {
         "url": "https://goo.gl/maps/Qoa6NH8MXp4DqNdbA",
@@ -307,8 +411,14 @@
         "url": "https://open.spotify.com/artist/6lt3CXKfhLXjYl2VFD6vN4",
         "name": "Lubalin"
       },
-      "favoriteThrow": "Hammer par-dessus le stack au dernier cutter dans le côté bris",
-      "favoriteUltimateMemory": "Premier point de la finale CQU7 2019 contre Loyal. Envoyer un Greatest en chicken wing no look over the shoulder directement dans les mains de mon coéquipier",
+      "favoriteThrow": {
+        "fr": "Hammer par-dessus le stack au dernier cutter dans le côté bris",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Premier point de la finale CQU7 2019 contre Loyal. Envoyer un Greatest en chicken wing no look over the shoulder directement dans les mains de mon coéquipier",
+        "en": null
+      },
       "instagramUsername": "rphldrn",
       "description": ""
     },
@@ -319,7 +429,10 @@
       "imageUrl": "~/img/ludoviccao2.jpg",
       "memeUrl": "https://tinder.com/@ludoviccao",
       "birthDate": "1993-12-19",
-      "zodiacSign": "Sagittaire ascendant Cancer",
+      "zodiacSign": {
+        "fr": "Sagittaire ascendant Cancer",
+        "en": null
+      },
       "topEmojis": ["🤦‍♀️", "🤷‍♀️","✌"],
       "recommendedRestaurant": {
         "url": "https://g.page/restolola45?share",
@@ -329,8 +442,14 @@
         "url": "https://open.spotify.com/artist/100sLnojEpcadRx4edEBA6",
         "name": "Zella Day"
       },
-      "favoriteThrow": "Reverse Haxi Maxi",
-      "favoriteUltimateMemory": "Lancer une longue passe d'une zone de but à une autre à mon amie Marie-Hélène, défendue par Quentin Bonnaud (MVP Royal 2019) en point Universe, gagnant la dernière partie de la saison récréative d'hiver",
+      "favoriteThrow": {
+        "fr": "Reverse Haxi Maxi",
+        "en": null
+      },
+      "favoriteUltimateMemory": {
+        "fr": "Lancer une longue passe d'une zone de but à une autre à mon amie Marie-Hélène, défendue par Quentin Bonnaud (MVP Royal 2019) en point Universe, gagnant la dernière partie de la saison récréative d'hiver",
+        "en": null
+      },
       "instagramUsername": "ludovic.cao",
       "description": ""
     }
