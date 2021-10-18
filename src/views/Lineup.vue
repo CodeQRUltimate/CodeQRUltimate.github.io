@@ -27,7 +27,7 @@
       class="mb-5 p-3 md:rounded-lg bg-black bg-opacity-50 md:border border-opacity-50 border-white"
       style="backdrop-filter: blur(8px);"
     >
-      <h1 class="text-center md:text-3xl mb-5">{{ lineupName }}</h1>
+      <h1 class="text-center md:text-3xl mb-5">{{ getString(lineupName) }}</h1>
       <div v-if="lineup.resultsUrl" class="text-center">
         <a
           :href="lineup.resultsUrl"
@@ -75,7 +75,7 @@ export default {
   },
   computed: {
     ...mapState(["route", "data"]),
-    ...mapGetters(["resolveUrl"]),
+    ...mapGetters(["resolveUrl", "getString"]),
     players() {
       if (!this.lineup) return [];
 

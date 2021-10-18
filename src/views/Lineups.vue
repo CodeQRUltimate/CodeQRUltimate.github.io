@@ -17,12 +17,12 @@
     <div>
       <div v-for="{ year, lineups } in lineupsByYear" :key="year" class="mb-10">
         <h2 class="text-3xl border-b mb-5">{{ year }}</h2>
-        <div v-for="lineup in lineups" :key="year + lineup.name" class="mb-5">
+        <div v-for="lineup in lineups" :key="lineup.key" class="mb-5">
           <router-link
             :to="{ name: 'lineup', params: { lineupKey: lineup.key } }"
             class="md:text-xl"
           >
-            {{ lineup.name }}
+            {{ getString(lineup.name) }}
           </router-link>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default {
   name: "Lineups",
   computed: {
     ...mapState(["data"]),
-    ...mapGetters(["lineupsByYear", "resolveUrl"]),
+    ...mapGetters(["lineupsByYear", "resolveUrl", "getString"]),
     playerKey() {
       return this.$route.query.player;
     },

@@ -38,6 +38,12 @@ const routes = [
     name: "playerMeme",
     component: () =>
       import(/* webpackChunkName: "player" */ "../views/Player.vue")
+  },
+  {
+    path: "/contact-us",
+    name: "contact-us",
+    component: () =>
+      import(/* webpackChunkName: "contact-us" */ "../views/ContactUs.vue")
   }
 ];
 

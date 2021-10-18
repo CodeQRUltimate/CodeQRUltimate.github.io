@@ -128,7 +128,7 @@ export default {
   name: "Player",
   computed: {
     ...mapState(["route"]),
-    ...mapGetters(["player", "resolveUrl"]),
+    ...mapGetters(["player", "resolveUrl", "getString"]),
     qrCodeUrl() {
       return `${window.location.origin}/#/players/${this.player.number}/meme`;
     },
@@ -142,7 +142,10 @@ export default {
         items.push([this.$t("age"), this.playerAge]);
       }
       if (this.player.zodiacSign) {
-        items.push([this.$t("zodiacSign"), this.player.zodiacSign]);
+        items.push([
+          this.$t("zodiacSign"),
+          this.getString(this.player.zodiacSign)
+        ]);
       }
       if (this.player.topEmojis && this.player.topEmojis.length > 0) {
         items.push([this.$t("emojis"), this.player.topEmojis.join(" ")]);
@@ -160,12 +163,15 @@ export default {
         ]);
       }
       if (this.player.favoriteThrow) {
-        items.push([this.$t("favoriteThrow"), this.player.favoriteThrow]);
+        items.push([
+          this.$t("favoriteThrow"),
+          this.getString(this.player.favoriteThrow)
+        ]);
       }
       if (this.player.favoriteUltimateMemory) {
         items.push([
           this.$t("favoriteUltimateMemory"),
-          this.player.favoriteUltimateMemory
+          this.getString(this.player.favoriteUltimateMemory)
         ]);
       }
 

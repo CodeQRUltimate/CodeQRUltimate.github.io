@@ -1,10 +1,12 @@
 <i18n>
 {
   "en": {
+    "contactUs": "Contact us",
     "lineups": "Lineups",
     "players": "Players"
   },
   "fr": {
+    "contactUs": "Contactez-nous",
     "lineups": "Alignements",
     "players": "Joueurs"
   }
@@ -33,6 +35,12 @@
         class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
         active-class="text-opacity-100 border-b border-white"
         >{{ $t("players") }}</router-link
+      >
+      <router-link
+        :to="{ name: 'contact-us' }"
+        class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
+        active-class="text-opacity-100 border-b border-white"
+        >{{ $t("contactUs") }}</router-link
       >
       <div class="ml-auto">
         <button
@@ -99,9 +107,5 @@ body {
 
 .text-shadow-swag {
   text-shadow: 2px 2px 0px #312e81, 4px 4px 0px #ecc94b;
-}
-
-.backdrop-blur {
-  backdrop-filter: blur(8px);
 }
 </style>

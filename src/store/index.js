@@ -13,11 +13,11 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    defaultLocale: "fr",
     route: {
       params: {},
       name: ""
     },
-    locale: i18n.locale.substring(0, 2),
     data: {
       dataOrigin: "",
       players: [],
@@ -25,6 +25,7 @@ export default new Vuex.Store({
     }
   },
   getters: {
+    locale: () => () => i18n.locale.substring(0, 2),
     playerNumber: state => Number(state.route.params.playerNumber),
     player: (state, getters) =>
       state.data.players.find(x => x.number === getters.playerNumber),
@@ -34,7 +35,9 @@ export default new Vuex.Store({
         year: year,
         lineups: state.data.lineups.filter(x => x.year === year)
       })),
-    resolveUrl: state => url => url?.replace("~", state.data.dataOrigin) ?? ""
+    resolveUrl: state => url => url?.replace("~", state.data.dataOrigin) ?? "",
+    getString: (state, getters) => strObj =>
+      strObj[getters.locale] || strObj[state.defaultLocale]
   },
   mutations: {
     LOCALE_SET: (state, locale) => {
