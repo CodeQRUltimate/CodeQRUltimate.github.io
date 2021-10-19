@@ -19,44 +19,64 @@
       <!-- This is just to make sure these classes are loaded since they're applied on the body -->
     </div>
     <div
-      class="flex items-baseline fixed top-0 right-0 left-0 bg-black text-graduate z-40"
+      class="flex items-center fixed top-0 right-0 left-0 bg-black text-graduate z-40 md:hidden"
     >
-      <router-link :to="{ name: 'home' }" class="inline-block px-4 mr-4 text-xl"
+      <button @click="isMenuCollapsed = false" class="p-4">
+        <i class="fas fa-bars"></i>
+      </button>
+      <router-link :to="{ name: 'home' }" class="inline-block text-xl"
         >Code QR Ultimate</router-link
       >
-      <router-link
-        :to="{ name: 'lineups' }"
-        class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
-        active-class="text-opacity-100 border-b border-white"
-        >{{ $t("lineups") }}</router-link
-      >
-      <router-link
-        :to="{ name: 'players' }"
-        class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
-        active-class="text-opacity-100 border-b border-white"
-        >{{ $t("players") }}</router-link
-      >
-      <router-link
-        :to="{ name: 'contact-us' }"
-        class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
-        active-class="text-opacity-100 border-b border-white"
-        >{{ $t("contactUs") }}</router-link
-      >
-      <div class="ml-auto">
-        <button
-          v-if="$root.$i18n.locale !== 'fr'"
-          @click="$root.$i18n.locale = 'fr'"
-          class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
+    </div>
+    <div
+      class="flex flex-col items-baseline fixed top-0 left-0 md:right-0 bottom-0 w-80 max-w-full bg-black shadow-xl text-graduate z-40 transform transition-transform md:flex-row md:w-auto md:bottom-auto md:-translate-x-0"
+      :class="{ '-translate-x-full': isMenuCollapsed }"
+    >
+      <div class="flex items-center w-full md:w-auto">
+        <router-link
+          :to="{ name: 'home' }"
+          class="inline-block p-4 mr-4 text-xl flex-grow"
+          >Code QR Ultimate</router-link
         >
-          Français
+        <button @click="isMenuCollapsed = true" class="ml-auto p-4 md:hidden">
+          <i class="fas fa-arrow-left"></i>
         </button>
-        <button
-          v-if="$root.$i18n.locale !== 'en'"
-          @click="$root.$i18n.locale = 'en'"
+      </div>
+      <div class="flex flex-col flex-grow w-full md:flex-row md:w-auto">
+        <router-link
+          :to="{ name: 'lineups' }"
           class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
+          active-class="text-opacity-100 border-r border-white md:border-r-0 md:border-b"
+          >{{ $t("lineups") }}</router-link
         >
-          English
-        </button>
+        <router-link
+          :to="{ name: 'players' }"
+          class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
+          active-class="text-opacity-100 border-r border-white md:border-r-0 md:border-b"
+          >{{ $t("players") }}</router-link
+        >
+        <router-link
+          :to="{ name: 'contact-us' }"
+          class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
+          active-class="text-opacity-100 border-r border-white md:border-r-0 md:border-b"
+          >{{ $t("contactUs") }}</router-link
+        >
+        <div class="md:ml-auto">
+          <button
+            v-if="$root.$i18n.locale !== 'fr'"
+            @click="$root.$i18n.locale = 'fr'"
+            class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
+          >
+            Français
+          </button>
+          <button
+            v-if="$root.$i18n.locale !== 'en'"
+            @click="$root.$i18n.locale = 'en'"
+            class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
+          >
+            English
+          </button>
+        </div>
       </div>
     </div>
     <div class="h-20" style="height:62px"></div>
@@ -71,6 +91,16 @@ import { mapActions } from "vuex";
 
 export default {
   name: "App",
+  data() {
+    return {
+      isMenuCollapsed: true
+    };
+  },
+  watch: {
+    $route() {
+      this.isMenuCollapsed = true;
+    }
+  },
   methods: {
     ...mapActions(["getData"])
   },
@@ -93,10 +123,6 @@ export default {
 </style>
 
 <style lang="scss">
-body {
-  font-family: "Lora", serif;
-}
-
 .text-graduate {
   font-family: "Graduate", cursive;
 }
