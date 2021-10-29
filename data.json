@@ -9,9 +9,9 @@
       "year": 2021,
       "name": {
         "fr": "Alignement automne 5c5 mixte récréatif",
-        "en": null
+        "en": "Line-up Fall 5v5 mixed league"
       },
-      "resultsUrl": "https://ugm.ultimatecentral.com/en_ca/e/ligues-rcratives-automne-2021/standings",
+      "resultsUrl": "https://ugm.ultimatecentral.com/en_ca/e/ligues-rcratives-automne-2021/standings/division/Montr%C3%A9al+Lundi+-+Coll%C3%A8ge+Bois-de-Boulogne",
       "playerNumbers": [3,5,7,13,36,45,53,55,66,88]
     },
     {
@@ -19,7 +19,7 @@
       "year": 2021,
       "name": {
         "fr": "Alignement été 5c5 mixte récréatif",
-        "en": null
+        "en": "Line-up Summer 5v5 mixed league"
       },
       "resultsUrl": "https://ugm.ultimatecentral.com/fr_ca/e/ligues-rcratives-t-2021/standings/stage/all/division/5c5+Montr%C3%A9al+Dimanche+-+Forbes",
       "playerNumbers": [2,5,7,10,27,36,45,53,66,88]
@@ -29,7 +29,7 @@
       "year": 2020,
       "name": {
         "fr": "Alignement été 5c5 mixte récréatif",
-        "en": null
+        "en": "Line-up Summer 5v5 mixed league"
       },
       "resultsUrl": "https://ugm.ultimatecentral.com/en_ca/e/saison-estivale-2020/standings/division/5c5+Montr%C3%A9al+Dimanche+-+Forbes",
       "playerNumbers": [2,5,25,27,36,45,53,66,88]
