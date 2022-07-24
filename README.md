@@ -10,3 +10,5 @@ Cette branche contient les données du site.
 - Sur cette page, clique sur **Add file > Upload files** 
 - Drag & drop ton fichier
 - Clique sur **Commit changes**
+
+### Attends 5 minutes que les données se rafraîchissent avant de paniquer
