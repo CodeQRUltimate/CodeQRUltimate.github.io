@@ -10,17 +10,17 @@
 <template>
   <div
     class="mx-auto mt-5 mb-5 p-3 md:rounded-lg bg-black bg-opacity-50 md:border border-opacity-50 border-white"
-    style="max-width: 800px; backdrop-filter: blur(8px);"
+    style="max-width: 800px; backdrop-filter: blur(8px)"
   >
-    <BodyBackgroundImage :url="resolveUrl(data.teamImageUrl)" />
+    <BodyBackgroundImage :url="resolveUrl(generalData.teamImageUrl)" />
 
     <h1
       class="text-center text-graduate text-shadow-swag text-3xl md:text-7xl mb-4"
     >
-      {{ data.teamName }}
+      {{ generalData.teamName }}
     </h1>
     <div class="bg-white rounded-lg text-center p-1 mb-10">
-      <img :src="resolveUrl(data.teamImageUrl)" class="rounded-lg" />
+      <img :src="resolveUrl(generalData.teamImageUrl)" class="rounded-lg" />
       <a :href="qrCodeUrl" class="inline-block rounded hover:bg-gray-100 mt-3">
         <QrCode
           :value="qrCodeUrl"
@@ -32,28 +32,27 @@
 </template>
 
 <script>
-import { mapState, mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 import QrCode from "@chenfengyuan/vue-qrcode";
 import BodyBackgroundImage from "../components/BodyBackgroundImage.vue";
 
 export default {
-  name: "Home",
+  name: "QrHome",
   computed: {
-    ...mapState(["data"]),
-    ...mapGetters(["resolveUrl"]),
+    ...mapGetters(["generalData", "resolveUrl"]),
     qrCodeUrl() {
       return window.location.origin;
-    }
+    },
   },
   methods: {
     getPlayersForLineup(lineup) {
       return lineup.playerNumbers.map(this.getPlayerByNumber);
     },
     getPlayerByNumber(playerNumber) {
-      return this.players.find(x => x.number === playerNumber);
-    }
+      return this.players.find((x) => x.number === playerNumber);
+    },
   },
-  components: { BodyBackgroundImage, QrCode }
+  components: { BodyBackgroundImage, QrCode },
 };
 </script>
 

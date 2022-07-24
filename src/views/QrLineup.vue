@@ -25,9 +25,9 @@
     </LinkBack>
     <div
       class="mb-5 p-3 md:rounded-lg bg-black bg-opacity-50 md:border border-opacity-50 border-white"
-      style="backdrop-filter: blur(8px);"
+      style="backdrop-filter: blur(8px)"
     >
-      <h1 class="text-center md:text-3xl mb-5">{{ getString(lineupName) }}</h1>
+      <h1 class="text-center md:text-3xl mb-5">{{ lineupName }}</h1>
       <div v-if="lineup.resultsUrl" class="text-center">
         <a
           :href="lineup.resultsUrl"
@@ -45,7 +45,7 @@
           :to="{
             name: 'player',
             params: { playerNumber: player.number },
-            query: { lineup: lineup.key }
+            query: { lineup: lineup.key },
           }"
           class="block text-graduate hover:bg-white hover:bg-opacity-25 rounded transition-colors duration-200"
         >
@@ -67,33 +67,37 @@ import BodyBackgroundImage from "../components/BodyBackgroundImage.vue";
 import LinkBack from "../components/LinkBack.vue";
 
 export default {
-  name: "Home",
+  name: "QrLineup",
   data() {
     return {
-      playerHovered: null
+      playerHovered: null,
     };
   },
   computed: {
     ...mapState(["route", "data"]),
-    ...mapGetters(["resolveUrl", "getString"]),
+    ...mapGetters(["generalData", "resolveUrl", "getDataList", "getString"]),
     players() {
       if (!this.lineup) return [];
 
-      return this.lineup.playerNumbers.map(this.getPlayerByNumber);
+      return this.getDataList(this.lineup.playerNumbers).map(
+        this.getPlayerByNumber
+      );
     },
     lineup() {
-      return this.data.lineups.find(x => x.key === this.route.params.lineupKey);
+      return this.data.lineups.find(
+        (x) => x.key === this.route.params.lineupKey
+      );
     },
     lineupName() {
-      return this.lineup ? this.lineup.name : "";
-    }
+      return this.lineup ? this.getString(this.lineup, "name") : "";
+    },
   },
   methods: {
     getPlayerByNumber(playerNumber) {
-      return this.data.players.find(x => x.number === playerNumber);
-    }
+      return this.data.players.find((x) => x.number == playerNumber);
+    },
   },
-  components: { LinkBack, BodyBackgroundImage }
+  components: { LinkBack, BodyBackgroundImage },
 };
 </script>
 

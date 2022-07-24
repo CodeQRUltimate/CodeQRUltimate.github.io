@@ -22,7 +22,7 @@
     />
     <div
       class="mx-auto mt-5 mb-5 p-3 md:rounded-lg bg-black bg-opacity-50 md:border border-opacity-50 border-white"
-      style="max-width: 600px; backdrop-filter: blur(8px);"
+      style="max-width: 600px; backdrop-filter: blur(8px)"
     >
       <div
         v-for="player in players"
@@ -50,10 +50,10 @@ import { mapState, mapGetters } from "vuex";
 import BodyBackgroundImage from "../components/BodyBackgroundImage.vue";
 
 export default {
-  name: "Home",
+  name: "QrPlayers",
   data() {
     return {
-      playerHovered: null
+      playerHovered: null,
     };
   },
   computed: {
@@ -64,9 +64,9 @@ export default {
     },
     players() {
       return this.data.players;
-    }
+    },
   },
-  components: { BodyBackgroundImage }
+  components: { BodyBackgroundImage },
 };
 </script>
 

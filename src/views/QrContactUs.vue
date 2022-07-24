@@ -17,10 +17,10 @@
 
 <template>
   <div class="mx-auto" style="max-width: 600px">
-    <BodyBackgroundImage :url="resolveUrl(data.teamImageUrl)" />
+    <BodyBackgroundImage :url="resolveUrl(generalData.teamImageUrl)" />
     <div
       class="my-5 p-3 md:rounded-lg bg-black bg-opacity-50 md:border border-opacity-50 border-white"
-      style="backdrop-filter: blur(8px);"
+      style="backdrop-filter: blur(8px)"
     >
       <h1 class="text-center text-2xl md:text-3xl mb-5">
         {{ $t("contactUs") }}
@@ -46,7 +46,7 @@
         ></textarea>
       </div>
       <a
-        :href="`mailto:${data.contactEmail}?subject=${subject}&body=${body}`"
+        :href="`mailto:${generalData.contactEmail}?subject=${subject}&body=${body}`"
         target="_blank"
         class="border border-white border-opacity-50 hover:border-opacity-100 hover:bg-white hover:bg-opacity-10 focus:bg-white focus:border-opacity-100 focus:bg-opacity-20 focus:outline-none focus:ring focus:ring-white focus:ring-opacity-25 transition-colors duration-200 inline-block px-3 py-2 rounded"
         >{{ $t("send") }}</a
@@ -60,18 +60,18 @@ import { mapState, mapGetters } from "vuex";
 import BodyBackgroundImage from "../components/BodyBackgroundImage.vue";
 
 export default {
-  name: "ContactUs",
+  name: "QrContactUs",
   data() {
     return {
       subject: "",
-      body: ""
+      body: "",
     };
   },
   computed: {
-    ...mapState(["route", "data"]),
-    ...mapGetters(["resolveUrl", "getString"])
+    ...mapState(["route"]),
+    ...mapGetters(["generalData", "resolveUrl", "getString"]),
   },
-  components: { BodyBackgroundImage }
+  components: { BodyBackgroundImage },
 };
 </script>
 

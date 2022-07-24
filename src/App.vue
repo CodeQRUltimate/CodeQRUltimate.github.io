@@ -14,7 +14,7 @@
 </i18n>
 
 <template>
-  <div style="text-shadow: 0 0 .25rem #000;">
+  <div style="text-shadow: 0 0 0.25rem #000">
     <div class="bg-black text-white overflow-y-scroll hidden">
       <!-- This is just to make sure these classes are loaded since they're applied on the body -->
     </div>
@@ -24,9 +24,9 @@
       <button @click="isMenuCollapsed = false" class="p-4">
         <i class="fas fa-bars"></i>
       </button>
-      <router-link :to="{ name: 'home' }" class="inline-block text-xl"
-        >Code QR Ultimate</router-link
-      >
+      <router-link :to="{ name: 'home' }" class="inline-block text-xl">{{
+        generalData || "Code QR Ultimate"
+      }}</router-link>
     </div>
     <div
       class="flex flex-col items-baseline fixed top-0 left-0 md:right-0 bottom-0 w-80 max-w-full bg-black shadow-xl text-graduate z-40 transform transition-transform md:flex-row md:w-auto md:bottom-auto md:-translate-x-0"
@@ -63,15 +63,15 @@
         >
         <div class="md:ml-auto">
           <button
-            v-if="$root.$i18n.locale !== 'fr'"
-            @click="$root.$i18n.locale = 'fr'"
+            v-if="locale === 'en'"
+            @click="setLocale('fr')"
             class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
           >
             Français
           </button>
           <button
-            v-if="$root.$i18n.locale !== 'en'"
-            @click="$root.$i18n.locale = 'en'"
+            v-if="locale === 'fr'"
+            @click="setLocale('en')"
             class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
           >
             English
@@ -79,7 +79,7 @@
         </div>
       </div>
     </div>
-    <div class="h-20" style="height:62px"></div>
+    <div class="h-20" style="height: 62px"></div>
     <transition name="page" mode="out-in">
       <router-view />
     </transition>
@@ -87,26 +87,30 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapState, mapGetters, mapActions } from "vuex";
 
 export default {
   name: "App",
   data() {
     return {
-      isMenuCollapsed: true
+      isMenuCollapsed: true,
     };
   },
   watch: {
     $route() {
       this.isMenuCollapsed = true;
-    }
+    },
+  },
+  computed: {
+    ...mapState(["locale"]),
+    ...mapGetters(["generalData"]),
   },
   methods: {
-    ...mapActions(["getData"])
+    ...mapActions(["getData", "setLocale"]),
   },
   async mounted() {
     await this.getData();
-  }
+  },
 };
 </script>
 

@@ -26,7 +26,7 @@
 </i18n>
 
 <template>
-  <div class="mx-auto" style="max-width: 800px;">
+  <div class="mx-auto" style="max-width: 800px">
     <BodyBackgroundImage v-if="player" :url="resolveUrl(player.imageUrl)" />
     <LinkBack
       v-if="lineupKey"
@@ -38,7 +38,7 @@
     }}</LinkBack>
     <div
       class="mb-5 p-3 md:rounded-lg bg-black bg-opacity-50 md:border border-opacity-50 border-white"
-      style="backdrop-filter: blur(8px);"
+      style="backdrop-filter: blur(8px)"
     >
       <div v-if="player">
         <div class="flex flex-col md:flex-row">
@@ -51,7 +51,7 @@
                 'background-image':
                   'url(\'' + resolveUrl(player.imageUrl) + '\')',
                 width: '4in',
-                height: '6in'
+                height: '6in',
               }"
             >
               <div class="flex flex-col h-full text-graduate text-left">
@@ -125,10 +125,10 @@ import BodyBackgroundImage from "../components/BodyBackgroundImage.vue";
 import LinkBack from "../components/LinkBack.vue";
 
 export default {
-  name: "Player",
+  name: "QrPlayer",
   computed: {
     ...mapState(["route"]),
-    ...mapGetters(["player", "resolveUrl", "getString"]),
+    ...mapGetters(["player", "resolveUrl", "getDataList", "getString"]),
     qrCodeUrl() {
       return `${window.location.origin}/#/players/${this.player.number}/meme`;
     },
@@ -141,37 +141,44 @@ export default {
       if (this.player.birthDate) {
         items.push([this.$t("age"), this.playerAge]);
       }
+
       if (this.player.zodiacSign) {
         items.push([
           this.$t("zodiacSign"),
-          this.getString(this.player.zodiacSign)
+          this.getString(this.player.zodiacSign),
         ]);
       }
-      if (this.player.topEmojis && this.player.topEmojis.length > 0) {
-        items.push([this.$t("emojis"), this.player.topEmojis.join(" ")]);
+
+      const topEmojis = this.getDataList(this.player.topEmojis);
+      if (this.player.topEmojis.length > 0) {
+        items.push([this.$t("emojis"), topEmojis.join(" ")]);
       }
-      if (this.player.recommendedRestaurant) {
+
+      if (this.player.recommendedRestaurantUrl) {
         items.push([
           this.$t("recommendedRestaurant"),
-          `<a href="${this.player.recommendedRestaurant.url}" target="_blank" class="underline">${this.player.recommendedRestaurant.name}</a>`
+          `<a href="${this.player.recommendedRestaurantUrl}" target="_blank" class="underline">${this.player.recommendedRestaurantName}</a>`,
         ]);
       }
-      if (this.player.recommendedArtist) {
+
+      if (this.player.recommendedArtistUrl) {
         items.push([
           this.$t("recommendedArtist"),
-          `<a href="${this.player.recommendedArtist.url}" target="_blank" class="underline">${this.player.recommendedArtist.name}</a>`
+          `<a href="${this.player.recommendedArtistUrl}" target="_blank" class="underline">${this.player.recommendedArtistName}</a>`,
         ]);
       }
+
       if (this.player.favoriteThrow) {
         items.push([
           this.$t("favoriteThrow"),
-          this.getString(this.player.favoriteThrow)
+          this.getString(this.player.favoriteThrow),
         ]);
       }
+
       if (this.player.favoriteUltimateMemory) {
         items.push([
           this.$t("favoriteUltimateMemory"),
-          this.getString(this.player.favoriteUltimateMemory)
+          this.getString(this.player.favoriteUltimateMemory),
         ]);
       }
 
@@ -179,15 +186,15 @@ export default {
     },
     lineupKey() {
       return this.route.query.lineup;
-    }
+    },
   },
   methods: {
-    ...mapActions(["checkMemeRedirection"])
+    ...mapActions(["checkMemeRedirection"]),
   },
   mounted() {
     this.checkMemeRedirection();
   },
-  components: { LinkBack, BodyBackgroundImage, QrCode }
+  components: { LinkBack, BodyBackgroundImage, QrCode },
 };
 </script>
 

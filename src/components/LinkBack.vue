@@ -10,8 +10,8 @@
 export default {
   name: "LinkBack",
   props: {
-    to: Object
-  }
+    to: Object,
+  },
 };
 </script>
 

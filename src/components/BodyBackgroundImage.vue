@@ -12,8 +12,8 @@
 export default {
   name: "BodyBackgroundImage",
   props: {
-    url: String
-  }
+    url: String,
+  },
 };
 </script>
 

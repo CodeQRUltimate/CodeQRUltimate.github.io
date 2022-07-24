@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#312E81"
-      }
+        primary: "#312E81",
+      },
     },
     fontSize: {
       xs: ".75rem",
@@ -20,9 +20,9 @@ module.exports = {
       "6xl": "4rem",
       "7xl": "5rem",
       "8xl": "6rem",
-      "9xl": "8rem"
-    }
+      "9xl": "8rem",
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 };
