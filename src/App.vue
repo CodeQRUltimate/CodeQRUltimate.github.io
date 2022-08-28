@@ -25,7 +25,7 @@
         <i class="fas fa-bars"></i>
       </button>
       <router-link :to="{ name: 'home' }" class="inline-block text-xl">{{
-        generalData || "Code QR Ultimate"
+        generalData.teamName || "Code QR Ultimate"
       }}</router-link>
     </div>
     <div

@@ -24,6 +24,7 @@ export default new Vuex.Store({
       general: [],
       players: [],
       lineups: [],
+      zodiacSigns: [],
     },
   },
   getters: {
@@ -44,6 +45,8 @@ export default new Vuex.Store({
     getString: (state) => (obj, prop) =>
       obj[prop + "_" + (state.locale || state.defaultLocale).toUpperCase()] ||
       obj[prop + "_" + state.defaultLocale.toUpperCase()],
+    getZodiacSign: (state) => (zodiacSign) =>
+      state.data.zodiacSigns.find((x) => x.key === zodiacSign),
   },
   mutations: {
     LOCALE_SET: (state, locale) => {

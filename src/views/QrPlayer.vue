@@ -127,8 +127,14 @@ import LinkBack from "../components/LinkBack.vue";
 export default {
   name: "QrPlayer",
   computed: {
-    ...mapState(["route"]),
-    ...mapGetters(["player", "resolveUrl", "getDataList", "getString"]),
+    ...mapState(["route", "data"]),
+    ...mapGetters([
+      "player",
+      "resolveUrl",
+      "getDataList",
+      "getString",
+      "getZodiacSign",
+    ]),
     qrCodeUrl() {
       return `${window.location.origin}/#/players/${this.player.number}/meme`;
     },
@@ -145,7 +151,9 @@ export default {
       if (this.player.zodiacSign) {
         items.push([
           this.$t("zodiacSign"),
-          this.getString(this.player.zodiacSign),
+          this.player.zodiacSign +
+            " " +
+            this.getString(this.getZodiacSign(this.player.zodiacSign), "name"),
         ]);
       }
 
