@@ -41,6 +41,12 @@ const routes = [
       import(/* webpackChunkName: "player" */ "../views/QrPlayer.vue"),
   },
   {
+    path: "/players/88/meemee",
+    name: "lud-meme",
+    component: () =>
+      import(/* webpackChunkName: "lud-meme" */ "../views/QrLudMeme.vue"),
+  },
+  {
     path: "/contact-us",
     name: "contact-us",
     component: () =>
