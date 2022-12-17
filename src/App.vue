@@ -2,11 +2,13 @@
 {
   "en": {
     "contactUs": "Contact us",
+    "gallery": "Gallery",
     "lineups": "Lineups",
     "players": "Players"
   },
   "fr": {
     "contactUs": "Contactez-nous",
+    "gallery": "Gallerie",
     "lineups": "Alignements",
     "players": "Joueurs"
   }
@@ -19,7 +21,7 @@
       <!-- This is just to make sure these classes are loaded since they're applied on the body -->
     </div>
     <div
-      class="flex items-center fixed top-0 right-0 left-0 bg-black text-graduate z-40 md:hidden"
+      class="flex items-center fixed top-0 right-0 left-0 bg-black text-graduate z-40 lg:hidden"
     >
       <button @click="isMenuCollapsed = false" class="p-4">
         <i class="fas fa-bars"></i>
@@ -29,39 +31,45 @@
       }}</router-link>
     </div>
     <div
-      class="flex flex-col items-baseline fixed top-0 left-0 md:right-0 bottom-0 w-80 max-w-full bg-black shadow-xl text-graduate z-40 transform transition-transform md:flex-row md:w-auto md:bottom-auto md:-translate-x-0"
+      class="flex flex-col items-baseline fixed top-0 left-0 lg:right-0 bottom-0 w-80 max-w-full bg-black shadow-xl text-graduate z-40 transform transition-transform lg:flex-row lg:w-auto lg:bottom-auto lg:-translate-x-0"
       :class="{ '-translate-x-full': isMenuCollapsed }"
     >
-      <div class="flex items-center w-full md:w-auto">
+      <div class="flex items-center w-full lg:w-auto">
         <router-link
           :to="{ name: 'home' }"
           class="inline-block p-4 mr-4 text-xl flex-grow"
           >Code QR Ultimate</router-link
         >
-        <button @click="isMenuCollapsed = true" class="ml-auto p-4 md:hidden">
+        <button @click="isMenuCollapsed = true" class="ml-auto p-4 lg:hidden">
           <i class="fas fa-arrow-left"></i>
         </button>
       </div>
-      <div class="flex flex-col flex-grow w-full md:flex-row md:w-auto">
+      <div class="flex flex-col flex-grow w-full lg:flex-row lg:w-auto">
         <router-link
           :to="{ name: 'lineups' }"
           class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
-          active-class="text-opacity-100 border-r border-white md:border-r-0 md:border-b"
+          active-class="text-opacity-100 border-r border-white lg:border-r-0 lg:border-b"
           >{{ $t("lineups") }}</router-link
         >
         <router-link
           :to="{ name: 'players' }"
           class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
-          active-class="text-opacity-100 border-r border-white md:border-r-0 md:border-b"
+          active-class="text-opacity-100 border-r border-white lg:border-r-0 lg:border-b"
           >{{ $t("players") }}</router-link
+        >
+        <router-link
+          :to="{ name: 'gallery' }"
+          class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
+          active-class="text-opacity-100 border-r border-white lg:border-r-0 lg:border-b"
+          >{{ $t("gallery") }}</router-link
         >
         <router-link
           :to="{ name: 'contact-us' }"
           class="inline-block p-4 text-white text-opacity-50 hover:text-opacity-75 transition-colors duration-200"
-          active-class="text-opacity-100 border-r border-white md:border-r-0 md:border-b"
+          active-class="text-opacity-100 border-r border-white lg:border-r-0 lg:border-b"
           >{{ $t("contactUs") }}</router-link
         >
-        <div class="md:ml-auto">
+        <div class="lg:ml-auto">
           <button
             v-if="locale === 'en'"
             @click="setLocale('fr')"

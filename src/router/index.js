@@ -47,6 +47,12 @@ const routes = [
       import(/* webpackChunkName: "lud-meme" */ "../views/QrLudMeme.vue"),
   },
   {
+    path: "/gallery",
+    name: "gallery",
+    component: () =>
+      import(/* webpackChunkName: "gallery" */ "../views/QrGallery.vue"),
+  },
+  {
     path: "/contact-us",
     name: "contact-us",
     component: () =>

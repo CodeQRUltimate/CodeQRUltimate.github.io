@@ -4,7 +4,7 @@ import i18n from "../i18n";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import localizedFormat from "dayjs/plugin/localizedFormat";
-import { uniq } from "lodash";
+import { chain, keys, uniq } from "lodash";
 import * as XLSX from "xlsx";
 
 dayjs.extend(relativeTime);
@@ -24,6 +24,7 @@ export default new Vuex.Store({
       general: [],
       players: [],
       lineups: [],
+      images: [],
       zodiacSigns: [],
     },
   },
@@ -47,6 +48,12 @@ export default new Vuex.Store({
       obj[prop + "_" + state.defaultLocale.toUpperCase()],
     getZodiacSign: (state) => (zodiacSign) =>
       state.data.zodiacSigns.find((x) => x.key === zodiacSign),
+    imagesByDate: (state) =>
+      chain(state.data.images)
+        .sortBy((x) => x.date)
+        .groupBy((x) => x.date)
+        .value(),
+    imageDates: (state, getters) => keys(getters.imagesByDate),
   },
   mutations: {
     LOCALE_SET: (state, locale) => {
@@ -69,7 +76,7 @@ export default new Vuex.Store({
         "https://raw.githubusercontent.com/CodeQRUltimate/CodeQRUltimate.github.io/data/data.xlsx"
       );
       const responseBuffer = await response.arrayBuffer();
-      const workbook = XLSX.read(responseBuffer);
+      const workbook = XLSX.read(responseBuffer, { cellDates: true });
       const data = {};
 
       workbook.SheetNames.forEach((name) => {

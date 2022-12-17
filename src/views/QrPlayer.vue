@@ -27,6 +27,7 @@
 
 <template>
   <div class="mx-auto" style="max-width: 800px">
+    <BaseMouseTracker />
     <BodyBackgroundImage v-if="player" :url="resolveUrl(player.imageUrl)" />
     <LinkBack
       v-if="lineupKey"
@@ -41,10 +42,13 @@
       style="backdrop-filter: blur(8px)"
     >
       <div v-if="player">
-        <div class="flex flex-col md:flex-row">
+        <div class="player-card-container flex flex-col md:flex-row">
           <div
-            class="self-center md:self-start flex-shrink-0 bg-white rounded-lg text-center p-1 mb-6 md:mb-0 md:mr-6 max-w-full"
+            class="player-card relative overflow-hidden self-center md:self-start flex-shrink-0 bg-white rounded-lg text-center p-1 mb-6 md:mb-0 md:mr-6 max-w-full"
           >
+            <div
+              class="player-card-shine absolute top-0 left-0 right-0 bottom-0 z-10"
+            ></div>
             <div
               class="relative rounded-lg w-full h-full bg-cover bg-center max-w-full"
               :style="{
@@ -79,7 +83,7 @@
                   {{ player.number }}
                 </div>
                 <div
-                  class="absolute top-0 right-0 flex items-center justify-around text-5xl md:text-5xl leading-none rounded-bl-lg border-l-2 border-b-2 border-white"
+                  class="absolute top-0 right-0 flex items-center justify-around text-5xl md:text-5xl leading-none rounded-bl-lg border-l-2 border-b-2 border-white bg-white"
                 >
                   <a :href="qrCodeUrl" target="_blank">
                     <QrCode
@@ -97,7 +101,7 @@
                 :href="'https://www.instagram.com/' + player.instagramUsername"
                 target="_blank"
               >
-                <i class="fa fa-lg fa-instagram"></i>
+                <i class="fab fa-lg fa-instagram"></i>
               </a>
             </div>
             <div
@@ -123,6 +127,7 @@ import { mapState, mapGetters, mapActions } from "vuex";
 import QrCode from "@chenfengyuan/vue-qrcode";
 import BodyBackgroundImage from "../components/BodyBackgroundImage.vue";
 import LinkBack from "../components/LinkBack.vue";
+import BaseMouseTracker from "../components/BaseMouseTracker.vue";
 
 export default {
   name: "QrPlayer",
@@ -202,8 +207,40 @@ export default {
   mounted() {
     this.checkMemeRedirection();
   },
-  components: { LinkBack, BodyBackgroundImage, QrCode },
+  components: { LinkBack, BodyBackgroundImage, QrCode, BaseMouseTracker },
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.player-card-container {
+  perspective: 1500px;
+}
+
+.player-card {
+  transition: transform 0.1s ease-out;
+  transform: rotateY(calc(15deg * (var(--cursor-x) - 0.5)))
+    rotateX(calc(-15deg * (var(--cursor-y) - 0.5)));
+}
+
+.player-card-shine {
+  background: radial-gradient(
+    circle,
+    rgba(
+      252,
+      211,
+      77,
+      calc(
+        0.15 *
+          (
+            max(var(--cursor-x) - 0.5, -1 * (var(--cursor-x) - 0.5)) +
+              max(var(--cursor-y) - 0.5, -1 * (var(--cursor-y) - 0.5))
+          )
+      )
+    ),
+    transparent,
+    transparent
+  );
+  transform: translateX(calc(-100% * (var(--cursor-x) - 0.5)))
+    translateY(calc(-100% * (var(--cursor-y) - 0.5)));
+}
+</style>
